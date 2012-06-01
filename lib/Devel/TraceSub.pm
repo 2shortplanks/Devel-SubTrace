@@ -1,4 +1,4 @@
-package Devel::TraceSubs;
+package Devel::TraceSub;
 
 use 5.006;  # require non prehistoric perl!
 
@@ -20,11 +20,11 @@ sub DB::sub {
     $frames++ while caller($frames);
 
     # print out the arguments
-    print STDERR "--"x$frames ."> ";
-    print STDERR "$DB::sub ($filename line $line)\n";
+    print {*STDERR} "--"x$frames ."> ";
+    print {*STDERR} "$DB::sub ($filename line $line)\n";
 
     # then jump to the right place without altering the stack
-    goto &$DB::sub
+    goto &{$DB::sub}
 }
 
 1;
@@ -33,7 +33,7 @@ __END__
 
 =head1 NAME
 
-Devel::TraceSubs - simple debugger that just prints out sub calls
+Devel::TraceSub - simple debugger that just prints out sub calls
 
 =head1 SYNOPSIS
 
