@@ -1,4 +1,4 @@
-package Devel::TraceSub;
+package Devel::SubTrace;
 
 use 5.006;  # require non prehistoric perl!
 
@@ -33,11 +33,11 @@ __END__
 
 =head1 NAME
 
-Devel::TraceSub - simple debugger that just prints out sub calls
+Devel::SubTrace - simple debugger that just prints out sub calls
 
 =head1 SYNOPSIS
 
-  perl -d:TraceSub synopsis.pl 
+  perl -d:SubTrace synopsis.pl 
   > main::foo (t/synopsis.pl line 3)
   --> main::bar (t/synopsis.pl line 6)
   ----> main::baz (t/synopsis.pl line 11)
@@ -79,17 +79,17 @@ and/or modify it under the same terms as Perl itself.
 
 Bugs should be reported via this distribution's
 CPAN RT queue.  This can be found at
-L<https://rt.cpan.org/Dist/Display.html?Devel-TraceSub>
+L<https://rt.cpan.org/Dist/Display.html?Devel-SubTrace>
 
 You can also address issues by forking this distribution
 on github and sending pull requests.  It can be found at
-L<http://github.com/2shortplanks/Devel-TraceSub>
+L<http://github.com/2shortplanks/Devel-SubTrace>
 
 =head1 SEE ALSO
 
 L<Devel::Trace> - print every line that is executed
 
-L<Devel::SubTrace> - hook all subs in a namespace with lexwrap and add
+L<Devel::TraceSubs> - hook all subs in a namespace with lexwrap and add
 debugging when executed
 
 =cut

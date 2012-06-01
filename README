@@ -1,8 +1,8 @@
 NAME
-    Devel::TraceSubs - simple debugger that just prints out sub calls
+    Devel::SubTrace - simple debugger that just prints out sub calls
 
 SYNOPSIS
-      perl -d:TraceSub synopsis.pl 
+      perl -d:SubTrace synopsis.pl 
       > main::foo (t/synopsis.pl line 3)
       --> main::bar (t/synopsis.pl line 6)
       ----> main::baz (t/synopsis.pl line 11)
@@ -39,15 +39,15 @@ COPYRIGHT
 
 BUGS
     Bugs should be reported via this distribution's CPAN RT queue. This can
-    be found at <https://rt.cpan.org/Dist/Display.html?Devel-TraceSub>
+    be found at <https://rt.cpan.org/Dist/Display.html?Devel-SubTrace>
 
     You can also address issues by forking this distribution on github and
     sending pull requests. It can be found at
-    <http://github.com/2shortplanks/Devel-TraceSub>
+    <http://github.com/2shortplanks/Devel-SubTrace>
 
 SEE ALSO
     Devel::Trace - print every line that is executed
 
-    Devel::SubTrace - hook all subs in a namespace with lexwrap and add
+    Devel::TraceSubs - hook all subs in a namespace with lexwrap and add
     debugging when executed
 

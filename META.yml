@@ -1,5 +1,5 @@
 ---
-abstract: ~
+abstract: 'simple debugger that just prints out sub calls'
 author:
   - 'Written by Mark Fowler <mark@twoshortplanks.com>'
 build_requires:
@@ -14,7 +14,7 @@ license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
   version: 1.4
-name: Devel-TraceSub
+name: Devel-SubTrace
 no_index:
   directory:
     - inc
@@ -23,5 +23,10 @@ no_index:
 requires:
   perl: 5.6.0
 resources:
+  homepage: https://github.com/2shortplanks/Devel-SubTrace/tree
   license: http://dev.perl.org/licenses/
+  repository:
+    type: git
+    url: git://github.com/2shortplanks/Devel-SubTrace.git
+    web: https://github.com/2shortplanks/Devel-SubTrace/tree
 version: 1.00

@@ -13,7 +13,7 @@ chdir $FindBin::Bin
 my ($wtr, $rdr, $err);
 use Symbol 'gensym'; $err = gensym;
 my $pid = open3($wtr, $rdr, $err,
-                 $^X, '-I../lib','-d:TraceSub','simple.pl');
+                 $^X, '-I../lib','-d:SubTrace','simple.pl');
 
 close $wtr;
 my $got;
